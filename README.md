@@ -1,1 +1,3 @@
-# max_ent_irl
+# Maximum Entropy Inverse Reinforcement Learning
+
+
