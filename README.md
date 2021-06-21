@@ -16,12 +16,9 @@ the logarithm is a monotonic transformation that preserves the locations of the 
 Find the Reward Parameters that maximize the likelihood of the expert trajectories, theta_star
 
 <img src="https://render.githubusercontent.com/render/math?math=
-\theta^{*} = \underset{\theta}{\arg\max} \underset{demonstrations}\prod[P(trajectories|\theta)] = \underset{\theta}{\arg\max} \underset{demonstrations}\sum log[P(trajectories|\theta)] = \underset{\theta}{\arg\max} L(\theta)
-">
+\theta^{*} = \underset{\theta}{\arg\max} \underset{demonstrations}\prod[P(trajectories|\theta)] = \underset{\theta}{\arg\max} \underset{demonstrations}\sum log[P(trajectories|\theta)] = \underset{\theta}{\arg\max} L(\theta)">
 
 The gradient for this Loss function L is
 
-<img src="https://render.githubusercontent.com/render/math?math=
-\nabla L(\theta) = f_{expert} - \underset{trajectories}\sum P(trajectory|\theta)f_{learner}
-= f_{expert} - \underset{states}\sum D_{s} f_{s}
-">
+<img src="https://render.githubusercontent.com/render/math?math=\nabla L(\theta) = f_{expert} - \underset{trajectories}\sum P(trajectory|\theta)f_{learner}
+= f_{expert} - \underset{states}\sum D_{s} f_{s}">
